@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  
+  <script src="Log.js"></script>
+  <script src="Box.js"></script>
+
+</head>
+
+<body>
+
+  <a-scene background="color:#000000">
+
+    <a-camera position="0 0 5">
+
+    </a-camera>
+
+    <a-entity log="Hi, it's me!"></a-entity>
+
+    <a-entity position="0 1 0" rotation="0 0 0" move-box-on-click>
+
+      <a-box>
+
+      </a-box>
+
+    </a-entity>
+    <a-cone position="0 1.5 0" color="red" radius-bottom="0.5", radius-top="0.1">
+
+    </a-cone>
+<a-cylinder position="0 -1 0" color="green" radius="0.5", height="4">
+
+</a-cylinder>
+<a-cylinder position="0 -4 0" color="blue" radius="0.5", height="3">
+  <a-triangle position="-0.93 -1.9 -0.94" color="blue" vertex-a="1 1 1" vertex-b="1 3 1" vertex-c="-1 3 1">
+
+  </a-triangle>
+  <a-triangle position="1.3 2 0.94" color="blue" vertex-a="-1 -1 -1" vertex-b="-1 -3 -1" vertex-c="1 -3 -1">
+
+  </a-triangle>
+
+</a-cylinder>
+<a-entity position="0 0 0" rotation="0 0 0">
+<a-sphere position="0 -10 14" color="yellow" radius="10>
+
+</a-sphere>
+</a-entity>
+  </a-scene>
+
+</body>
+
+</html>
